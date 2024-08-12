@@ -4,22 +4,96 @@ body{
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
+    background-color: #DDD0C8;
 }
 
-.topbar{
-    background: rgb(39, 235, 160);
-    color: rgb(68, 60, 15);
+.topbar {
+    background: #DDD0C8;
+    color: #323232;
     display: flex;
     align-items: center;
     padding: 0 16px;
     font-size: 32px;
     font-weight: 900;
     position: sticky;
+    justify-content: space-between;
     top: 0;
-
-
-
 }
+
+
+#buttoncontainer{
+    align-items: center;
+    margin-right: 5%;
+}
+.buttons{
+    color: #323232;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 25px;
+ 
+}
+.buttons:hover{
+    background-color: #c2b4ab;
+    padding: 10px;
+ 
+}
+@media only screen and (max-width: 1080px) {
+    #buttoncontainer{
+        display: none;
+    }
+}
+
+
+
+#dropmenu{
+    float: left;
+    overflow: hidden;
+   
+}
+#dropbutton{
+    color: #323232;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 25px;
+   
+}
+#dropcontent{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   
+}
+#dropcontent a{
+    float: none;
+    color: #323232;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    text-align: left;
+    border-radius: 25px;
+}
+#dropcontent a:hover{
+    background-color: #c2b4ab;
+    border-radius: 25px;
+}
+#dropmenu:hover #dropcontent{
+    display: block;
+    border-radius: 25px;
+}
+@media only screen and (min-width: 1080px) {
+    #dropmenu{
+        display: none;
+    }
+  
+}
+
+
+
 
 #resume{
     margin: 5px;
@@ -40,7 +114,7 @@ body{
 
 
 .leftsidebar{
-    background: rgb(39, 235, 160);
+    background: #d6c4ba;
     max-width: 200px;
     width: auto;
     flex-shrink: 0;
@@ -48,6 +122,7 @@ body{
     left: 1;
     top: 1;
     box-sizing: border-box;
+    border-radius: 15px;
 
 }
 
@@ -56,41 +131,18 @@ body{
     height: auto;
     float: center;
 }
-.myname{
+#myname{
     font-size: 36px;
     text-align: center;
 }
 #role{
     text-align: center;
 }
-
-
-/*topbar button containter and button*/
-.buttons{
-    align-items: center;
-    margin: 5px;
-    float: right;
-}
-
-.topbuttons{
-    width: 115px;
-    height: 40px;
+#age{
     text-align: center;
-    font-size: 16px;
-    border-radius: 25px;
-    margin: 5px;
-    border: none;
-    transition: transform .1s ease-in-out;
-}
-
-.topbuttons:hover{
-    transform: scale(1.15);
-    background-color: #ff0000;
 }
 
 
-
-/*topbar button containter and button*/
 
 
 .container{
@@ -120,30 +172,11 @@ body{
     height: auto;
 }
 
-.about{
-    background-color: pink;
-}
-.experience{
-    background-color: pink;
-}
-.education{
-    background-color: pink;
-}
-.projects{
-    background-color: pink;
-}
-.skills{
-    background-color: pink;
-}
-.contact{
-    background-color: pink;
-}
-
 
 .mainheads{
     font-weight: bold;
     font-size: 32px;
-    text-align: center;
+    text-align: left;
 
 }
 

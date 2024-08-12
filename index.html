@@ -5,21 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer>
+
+    </script>
     <title>My Resume</title>
 </head>
 <body>
 
-   
 
 <div class="topbar">
     <div id="resume">My Resume</div>
-    <div class="buttons">
-        <a href="#about"><button class="topbuttons" >ABOUT</button></a>
-        <a href="#experience"><button class="topbuttons" >EXPERIENCE</button></a>
-        <a href="#education"><button class="topbuttons" >EDUCATION</button></a>
-        <a href="#projects"><button class="topbuttons" >PROJECTS</button></a>
-        <a href="#skills"><button class="topbuttons" >SKILLS</button></a>
-        <a href="#contact"><button class="topbuttons" >CONTACT</button></a>
+    <div id="buttoncontainer">
+        <a class="buttons" href="#about">ABOUT</a>
+        <a class="buttons" href="#experience">EXPERIENCE</a>
+        <a class="buttons" href="#education">EDUCATION</a>
+        <a class="buttons" href="#projects">PROJECTS</a>
+        <a class="buttons" href="#skills">SKILLS</a>
+        <a class="buttons" href="#contact">CONTACT</a>
+    </div>
+    <div id="dropmenu">
+        <a id="dropbutton">MENU
+            <i class="fa fa-caret-down"></i>
+        </a>
+        <div id="dropcontent">
+            <a class="dropbuttons" href="#about">ABOUT</a>
+            <a class="dropbuttons" href="#experience">EXPERIENCE</a>
+            <a class="dropbuttons" href="#education">EDUCATION</a>
+            <a class="dropbuttons" href="#projects">PROJECTS</a>
+            <a class="dropbuttons" href="#skills">SKILLS</a>
+            <a class="dropbuttons" href="#contact">CONTACT</a>
+        </div>
+
     </div>
 </div>
 
@@ -28,8 +44,9 @@
 
 <div class="leftsidebar">
     <img id="profilepic" src="../MyResume/images/ProfilePic.jpg" alt="MyProfilePic">
-    <div class="myname">Isaiah Timothy P. Pangilinan</div>
+    <div id="myname">Isaiah Timothy P. Pangilinan</div>
     <div id="role">Electronics Technician</div>
+    <div id="age">Age of 22</div>
 </div>
 
 
@@ -37,14 +54,14 @@
 
     <div class="about"> 
         <h2 class="mainheads" id="about">ABOUT</h2>
-        <p>some personal info here and career summarysome personal info here and career 
+        <div>some personal info here and career summarysome personal info here and career 
             summarysome personal info here and career summarysome personal info here and career 
             summarysome personal info here and career summarysome personal info here and career summarysome 
             personal info here and career summarysome personal info here and career summarysome personal info here a
             nd career summarysome personal info here and career summarysome personal info here and career summarysome 
             personal info here and career summarysome personal info here and career summarysome personal info here and
              career summary
-        </p>
+        </div>
     </div>
 
     <div class="experience">
@@ -62,7 +79,8 @@
 
     <div class="projects">
         <h2 class="mainheads" id="projects">PROJECTS</h2>
-        <p> This MyResume Website</p>
+        <p>My Resume Website</p>
+        <a href="https://github.com/TimDevStory/MyResume.git" target="_blank" rel="noopener noreferrer">Here</a>
     </div>
 
     <div class="skills">
@@ -77,6 +95,13 @@
             <li>JavaScript</li>
             <li>C++</li>
         </ul>
+        <h3>others</h3>
+        <ul>
+            <li>PCB Design (EasyEDA)</li>
+            <li>Microcontrollers</li>
+            <li>Git/GitHub</li>
+        </ul>
+
     </div>
 
     <div class="contact">
